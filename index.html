@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Something</title>
+    <title>Momongtom</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="weather">
+      <div class="weather__info">
+        <div class="weather__column">
+          <div class="weather__icon thunderstorm">
+            <i class="fas fa-bolt fa-lg"></i>
+          </div>
+          <div class="weather__icon drizzle">
+            <i class="fas fa-cloud-rain fa-lg"></i>
+          </div>
+          <div class="weather__icon rain">
+            <i class="fas fa-cloud-showers-heavy fa-lg"></i>
+          </div>
+          <div class="weather__icon snow">
+            <i class="fas fa-snowflake fa-lg"></i>
+          </div>
+          <div class="weather__icon atmosphere">
+            <i class="fas fa-smog fa-lg"></i>
+          </div>
+          <div class="weather__icon clear">
+            <i class="fas fa-sun fa-lg"></i>
+          </div>
+          <div class="weather__icon clouds">
+            <i class="fas fa-cloud fa-lg"></i>
+          </div>
+          <span class="js-weather-deg weather__text weather__deg"></span>
+        </div>
+        <div class="weather__column">
+          <span class="js-weather-loc weather__text"></span>
+        </div>
+      </div>
+    </div>
     <div class="js-clock">
-      <h1 class="js-title">00:00</h1>
+      <h1 class="js-title clock-display">00:00</h1>
     </div>
     <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
+      <input type="text" placeholder="what is your name?" />
     </form>
     <h4 class="js-greetings greetings"></h4>
     <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
+      <input type="text" placeholder="write a to-do list" />
     </form>
-    <ul class="js-toDoList"></ul>
+    <ul class="js-toDoList toDoList"></ul>
 
-    <span class="js-weather"></span>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/47a145439b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
