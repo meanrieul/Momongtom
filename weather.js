@@ -51,7 +51,7 @@ function getWeather(lat, lng) {
         const temperature = json.main.temp;
         const place = json.name;
         const condition = parseInt(json.weather[0].id);
-
+        getCondition(condition);
         weatherDeg.innerText = `${temperature}°C`;
         weatherLoc.innerText = `at ${place}`;
     });
